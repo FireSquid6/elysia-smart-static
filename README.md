@@ -1,4 +1,15 @@
-# @elysiajs/static
+# elysia-smart-static
+Elysia smart static is a fork of elysia static plugin that provides a tiny bit of extra functionality. It will:
+
+1. Assume the user is looking for a `.html` file if no file extension is specified (i.e. /docs/getting-started -> /docs/getting-started.html)
+2. Handle checking for index files (i.e. /docs/getting-started -> /docs/getting-started/index.html).
+
+If the user gives the route `/docs/getting-started` and both the files `/docs/getting-started.html` and `/docs/getting-started/index.html` exist, the one without the index will be preferred. A warning should be printed to the console if this happens.
+
+The original elysia static plugin was created by @SaltyAnom and this fork was created by @firesquid6 for [inkdocs](https://github.com/firesquid6/inkdocs).
+
+
+# Original README
 Plugin for [elysia](https://github.com/saltyaom/elysia) for serving static folder.
 
 ## Installation
